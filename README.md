@@ -13,15 +13,17 @@ This project formulates, trains, and evaluates econometric regression models pre
 
 ## 📁 Repository Structure
 ```text
-├── data/
-│   └── housing_data.csv
-├── notebooks/
-│   └── house_price_prediction.ipynb
 ├── charts/
 │   ├── actual_vs_predicted_prices.png
 │   ├── feature_coefficients_impact.png
 │   ├── housing_correlation_heatmap.png
 │   └── residual_analysis_diagnostics.png
+├── data/
+│   └── housing_data.csv
+├── notebooks/
+│   └── house_price_prediction.ipynb
+├── report/
+│   └── findings_and_recommendations.md
 ├── ml_core.py
 ├── run_regression.py
 ├── requirements.txt
@@ -30,11 +32,24 @@ This project formulates, trains, and evaluates econometric regression models pre
 
 ---
 
-## 📈 Model Performance & Econometric Coefficients
-- **Accuracy**: Achieved **$R^2 = 0.9706$** ($MAE = \$13,750$).
-- **Living Area**: Adds **+\$145.00** per additional square foot.
-- **Location Premium**: `Lakeside` (+**\$85k**) and `Downtown` (+**\$65k**) command highest valuation premiums.
-- **Depreciation**: Housing depreciates at **-\$650/year** of age and **-\$1,800/km** from city center.
+## 📈 Visualizations & Key Charts
+
+### 1. Actual vs. Predicted Parity Plot
+![Actual vs Predicted](charts/actual_vs_predicted_prices.png)
+
+### 2. Feature Marginal Coefficients ($ Impact)
+![Feature Coefficients](charts/feature_coefficients_impact.png)
+
+### 3. Housing Correlation Matrix Heatmap
+![Correlation Heatmap](charts/housing_correlation_heatmap.png)
+
+### 4. Residual Diagnostics (Homoscedasticity & Normality)
+![Residual Diagnostics](charts/residual_analysis_diagnostics.png)
+
+---
+
+## 📄 Valuation Report
+For the complete econometric coefficient analysis and model benchmarking, see **[report/findings_and_recommendations.md](report/findings_and_recommendations.md)**.
 
 ---
 
